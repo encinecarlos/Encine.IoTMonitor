@@ -7,8 +7,21 @@ namespace Encine.IoTMonitor.Domain.Entities
     {
         public string Name { get; init; }
         public SensorType Type { get; init; }
-        public Coordinates Location { get; init; }
+        public Coordinates? Location { get; init; }
         public bool Active { get; set; }
-        public DeviceConfiguration Configuration { get; set; }
+        public SensorConfiguration? Configuration { get; set; }
+
+        private Sensor(string name, SensorType type, bool active)
+        {
+            Id = Guid.NewGuid();
+            Name = name;
+            Type = type;
+            Active = active;
+        }
+
+        public static Sensor Create(string name, SensorType type, bool active)
+        {
+            return new Sensor(name, type, active);
+        }
     }
 }

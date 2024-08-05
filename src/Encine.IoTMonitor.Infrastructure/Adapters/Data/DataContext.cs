@@ -24,12 +24,12 @@ namespace Encine.IoTMonitor.Infrastructure.Adapters.Data
 
             modelBuilder.Entity<Sensor>().ToCollection("sensors");
             modelBuilder.Entity<SensorData>().ToCollection("sensorData");
-            modelBuilder.Entity<DeviceConfiguration>().ToCollection("deviceConfigurations");
+            modelBuilder.Entity<SensorConfiguration>().ToCollection("deviceConfigurations");
         }
 
         public DbSet<Sensor> Sensors { get; set; }
         public DbSet<SensorData> SensorData { get; set; }
-        public DbSet<DeviceConfiguration> DeviceConfigurations { get; set; }
+        public DbSet<SensorConfiguration> DeviceConfigurations { get; set; }
     }
     
 }
