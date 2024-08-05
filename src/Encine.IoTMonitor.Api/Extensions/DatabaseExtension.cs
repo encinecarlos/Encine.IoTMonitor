@@ -1,4 +1,5 @@
 ﻿using Encine.IoTMonitor.Infrastructure.Adapters.Data;
+using Encine.IoTMonitor.UseCases.Ports;
 using Microsoft.EntityFrameworkCore;
 using MongoDB.Driver;
 
@@ -14,6 +15,8 @@ namespace Encine.IoTMonitor.Api.Extensions
             {
                 options.UseMongoDB(client, configuration.GetSection("MongoDb:Database").Value);
             });
+
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
         }
     }
 }
