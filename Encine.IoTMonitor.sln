@@ -13,6 +13,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Encine.IoTMonitor.UseCases"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encine.ioTmonitor.UnitTests", "tests\Encine.ioTmonitor.UnitTests\Encine.ioTmonitor.UnitTests.csproj", "{38890720-EFA2-4EEA-A72B-2F25DF2B74A6}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0F10D548-5CD1-4D27-9DB7-94EF67FA9454}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{8E438121-345A-4F8A-B1CA-5FD39F907BAA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,6 +46,13 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D3A66B1F-3618-44F5-950B-8FA6A9811F5F} = {0F10D548-5CD1-4D27-9DB7-94EF67FA9454}
+		{B6BB19EF-AF66-4A2E-B22F-332409C2A2DA} = {0F10D548-5CD1-4D27-9DB7-94EF67FA9454}
+		{E3EBA9E8-5CBA-4C3E-8832-9661CB70B603} = {0F10D548-5CD1-4D27-9DB7-94EF67FA9454}
+		{7828AEBE-95C3-4813-9F6C-E31AFEFD8263} = {0F10D548-5CD1-4D27-9DB7-94EF67FA9454}
+		{38890720-EFA2-4EEA-A72B-2F25DF2B74A6} = {8E438121-345A-4F8A-B1CA-5FD39F907BAA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {320B60E3-1A94-4998-8EA4-EA41EC19C262}
