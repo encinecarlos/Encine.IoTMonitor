@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encine.IoTMonitor.Api", "src\Encine.IoTMonitor.Api\Encine.IoTMonitor.Api.csproj", "{D3A66B1F-3618-44F5-950B-8FA6A9811F5F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Encine.IoTMonitor.Api", "src\Encine.IoTMonitor.Api\Encine.IoTMonitor.Api.csproj", "{D3A66B1F-3618-44F5-950B-8FA6A9811F5F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encine.IoTMonitor.Domain", "src\Encine.IoTMonitor.Domain\Encine.IoTMonitor.Domain.csproj", "{B6BB19EF-AF66-4A2E-B22F-332409C2A2DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Encine.IoTMonitor.Domain", "src\Encine.IoTMonitor.Domain\Encine.IoTMonitor.Domain.csproj", "{B6BB19EF-AF66-4A2E-B22F-332409C2A2DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encine.IoTMonitor.Infrastructure", "src\Encine.IoTMonitor.Infrastructure\Encine.IoTMonitor.Infrastructure.csproj", "{E3EBA9E8-5CBA-4C3E-8832-9661CB70B603}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Encine.IoTMonitor.Infrastructure", "src\Encine.IoTMonitor.Infrastructure\Encine.IoTMonitor.Infrastructure.csproj", "{E3EBA9E8-5CBA-4C3E-8832-9661CB70B603}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encine.IoTMonitor.UseCases", "src\Encine.IoTMonitor.UseCases\Encine.IoTMonitor.UseCases.csproj", "{7828AEBE-95C3-4813-9F6C-E31AFEFD8263}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Encine.IoTMonitor.UseCases", "src\Encine.IoTMonitor.UseCases\Encine.IoTMonitor.UseCases.csproj", "{7828AEBE-95C3-4813-9F6C-E31AFEFD8263}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encine.ioTmonitor.UnitTests", "tests\Encine.ioTmonitor.UnitTests\Encine.ioTmonitor.UnitTests.csproj", "{38890720-EFA2-4EEA-A72B-2F25DF2B74A6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{7828AEBE-95C3-4813-9F6C-E31AFEFD8263}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7828AEBE-95C3-4813-9F6C-E31AFEFD8263}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7828AEBE-95C3-4813-9F6C-E31AFEFD8263}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38890720-EFA2-4EEA-A72B-2F25DF2B74A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38890720-EFA2-4EEA-A72B-2F25DF2B74A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38890720-EFA2-4EEA-A72B-2F25DF2B74A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38890720-EFA2-4EEA-A72B-2F25DF2B74A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

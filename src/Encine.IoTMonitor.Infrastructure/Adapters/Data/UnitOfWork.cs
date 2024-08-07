@@ -33,7 +33,9 @@ namespace Encine.IoTMonitor.Infrastructure.Adapters.Data
             }
 
             var repository = new Repository<TEntity>(_context);
+            
             _repositories.Add(typeof(TEntity), repository);
+           
             return repository;
         }
     }

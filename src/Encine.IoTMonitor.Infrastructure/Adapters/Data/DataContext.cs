@@ -7,13 +7,6 @@ namespace Encine.IoTMonitor.Infrastructure.Adapters.Data
 {
     public class DataContext : DbContext
     {
-        //public static DataContext Create(IMongoDatabase database)
-        //{
-        //    return new(new DbContextOptionsBuilder<DataContext>()
-        //        .UseMongoDB(database.Client, database.DatabaseNamespace.DatabaseName)
-        //        .Options);
-        //}
-
         public DataContext(DbContextOptions<DataContext> options) : base(options)
         {
         }

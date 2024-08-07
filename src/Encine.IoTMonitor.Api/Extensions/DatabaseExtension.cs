@@ -13,7 +13,8 @@ namespace Encine.IoTMonitor.Api.Extensions
 
             services.AddDbContext<DataContext>(options =>
             {
-                options.UseMongoDB(client, configuration.GetSection("MongoDb:Database").Value);
+                var database = configuration.GetSection("DefaultConnectionString:Database");
+                options.UseMongoDB(client, configuration.GetSection("Database").Value);
             });
 
             services.AddScoped<IUnitOfWork, UnitOfWork>();
