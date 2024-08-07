@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Encine.IoTMonitor.Domain.Entities
+﻿namespace Encine.IoTMonitor.Domain.Entities
 {
-    internal class BaseEntity
+    public abstract class BaseEntity
     {
+        public Guid Id { get; set; }
+        public DateTimeOffset CreationDate { get; set; }
+        public DateTimeOffset? LastUpdateDate { get; set; }
     }
 }
