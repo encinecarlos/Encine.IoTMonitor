@@ -2,20 +2,20 @@
 using Encine.IoTMonitor.Domain.Enums;
 using Encine.IoTMonitor.UseCases.Dtos;
 using Encine.IoTMonitor.UseCases.Ports;
-using Encine.IoTMonitor.UseCases.SensorUseCase;
+using Encine.IoTMonitor.UseCases.SensorUseCase.Commands;
 using FluentAssertions;
 using Moq;
 using Serilog;
 
 namespace Encine.ioTmonitor.UnitTests.UseCases
 {
-    public class SensorUseCaseunitTest
+    public class SensorUseCaseTests
     {
         private readonly Mock<IUnitOfWork> _unitOfWork;
         private readonly Mock<ILogger> _logger;
         private readonly SensorHandlerUseCase _sensorHandlerUseCase;
 
-        public SensorUseCaseunitTest()
+        public SensorUseCaseTests()
         {
             _unitOfWork = new Mock<IUnitOfWork>();
             _logger = new Mock<ILogger>();
