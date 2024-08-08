@@ -17,6 +17,9 @@ namespace Encine.IoTMonitor.Api.Controllers
         }
 
         [HttpGet]
+        [ProducesResponseType(typeof(IEnumerable<GetSensorDtoResponse>), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> GetAllSensors(CancellationToken cancellationToken)
         {
             return Ok(await _mediator.Send(new GetSensorDto(), cancellationToken));
@@ -32,6 +35,9 @@ namespace Encine.IoTMonitor.Api.Controllers
         }
 
         [HttpGet("{id}")]
+        [ProducesResponseType(typeof(GetSensorDtoResponse), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> GetSensorById(Guid id, CancellationToken cancellationToken)
         {
             return Ok(await _mediator.Send(new GetSensorByIdDto(id), cancellationToken));
