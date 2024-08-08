@@ -17,9 +17,9 @@ namespace Encine.IoTMonitor.Api.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAllSensors()
+        public async Task<IActionResult> GetAllSensors(CancellationToken cancellationToken)
         {
-            return Ok();
+            return Ok(await _mediator.Send(new GetSensorDto(), cancellationToken));
         }
 
         [HttpPost]
@@ -32,9 +32,9 @@ namespace Encine.IoTMonitor.Api.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetSensorById(Guid id)
+        public async Task<IActionResult> GetSensorById(Guid id, CancellationToken cancellationToken)
         {
-            return Ok();
+            return Ok(await _mediator.Send(new GetSensorByIdDto(id), cancellationToken));
         }
     }
 }

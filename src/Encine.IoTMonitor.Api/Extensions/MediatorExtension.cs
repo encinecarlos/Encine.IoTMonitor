@@ -1,4 +1,4 @@
-﻿using Encine.IoTMonitor.UseCases.SensorUseCase;
+﻿using Encine.IoTMonitor.UseCases.SensorUseCase.Commands;
 using System.Reflection;
 
 namespace Encine.IoTMonitor.Api.Extensions
