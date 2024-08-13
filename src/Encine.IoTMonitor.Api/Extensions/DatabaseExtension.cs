@@ -2,9 +2,11 @@
 using Encine.IoTMonitor.UseCases.Ports;
 using Microsoft.EntityFrameworkCore;
 using MongoDB.Driver;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Encine.IoTMonitor.Api.Extensions
 {
+    [ExcludeFromCodeCoverage]
     public static class DatabaseExtension
     {
         public static void AddDatabase(this IServiceCollection services, IConfiguration configuration)

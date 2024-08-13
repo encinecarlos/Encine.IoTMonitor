@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Encine.IoTMonitor.Api.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/v{version:apiVersion}/[controller]")]
     [Produces("application/json")]
     [ApiController]
     public class SensorController : ControllerBase

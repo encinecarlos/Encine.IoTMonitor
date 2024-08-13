@@ -5,6 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerExtension();
 builder.Services.AddMediator();
 builder.Services.AddSerilogExtension();
 builder.Services.AddDatabase(builder.Configuration);
