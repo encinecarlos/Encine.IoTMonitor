@@ -1,10 +1,10 @@
 ﻿using Serilog;
 using Serilog.Events;
-using Serilog.Formatting.Json;
-using Serilog.Sinks.SystemConsole.Themes;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Encine.IoTMonitor.Api.Extensions
 {
+    [ExcludeFromCodeCoverage]
     public static class LogExtension
     {
         public static void AddSerilogExtension(this IServiceCollection services)
